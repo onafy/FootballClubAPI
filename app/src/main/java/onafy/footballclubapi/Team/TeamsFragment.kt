@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import android.widget.*
 import com.google.gson.Gson
 import onafy.footballclubapi.Api.ApiRepository
+import onafy.footballclubapi.DetailTeam.TeamsDetailActivity
 
 import onafy.footballclubapi.ModelDataClass.Team
 
