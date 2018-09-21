@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_home.*
 import onafy.footballclubapi.Fragment.FavoriteTeamsFragment
-import onafy.footballclubapi.Fragment.TeamsFragment
+import onafy.footballclubapi.Team.TeamsFragment
 import onafy.footballclubapi.R.id.favorites
 import onafy.footballclubapi.R.id.teams
 
@@ -17,10 +17,10 @@ class HomeActivity : AppCompatActivity() {
         bottom_navigation.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 teams -> {
-
+                    loadTeamsFragment(savedInstanceState)
                 }
                 favorites -> {
-
+                    loadFavoritesFragment(savedInstanceState)
                 }
             }
             true
